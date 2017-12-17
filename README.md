@@ -47,7 +47,7 @@ Usage
             }
           );
           
-        this.ngcable.setCable(
+        this.ngcable.set_cable(
           http://example.com/chat
         );
         
@@ -79,7 +79,7 @@ perform(action, data)
 
 unsubscribe()
 
-get_subscriptions()
+getSubscriptions()
 
 reject(subscription)
 

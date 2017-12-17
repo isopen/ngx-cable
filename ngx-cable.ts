@@ -33,7 +33,7 @@ export class NgXCable {
             }
         );
     };
-    public get_subscriptions = function() {
+    public getSubscriptions = function() {
         return this.cable.subscriptions.subscriptions;
     };
     public reject = function(subscription) {
