@@ -1,3 +1,5 @@
+![alt text](https://img.shields.io/travis/USER/REPO.svg)
+
 Install
 -----------------------------------
 npm install actioncable --save<br>
