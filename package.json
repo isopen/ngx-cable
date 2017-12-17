@@ -18,5 +18,26 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/isopen/ngx-cable.git"
-  }
+  },
+  "keywords": [
+    "cable",
+    "ActionCable",
+    "Angular2-cable",
+    "Angular4-cable",
+    "Angular5-cable",
+    "ngx-cable",
+    "ngXCable",
+    "Rails",
+    "rails",
+    "Cable",
+    "Angular2",
+    "Angular4",
+    "Angular5",
+    "ionic2",
+    "ionic3",
+    "ionic2-cable",
+    "ionic3-cable",
+    "Rails5",
+    "Action Cable"
+  ]
 }
