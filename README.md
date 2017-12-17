@@ -1,6 +1,6 @@
 Install
 -----------------------------------
-
+npm install actioncable --save<br><br>
 npm install ngx-cable --save
 
 Example
