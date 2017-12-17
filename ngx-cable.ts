@@ -39,4 +39,7 @@ export class NgXCable {
     public reject = function(subscription) {
         this.cable.subscriptions.remove(subscription);
     };
+    public disconnect = function() {
+        this.cable.disconnect();
+    };
 };

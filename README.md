@@ -83,6 +83,8 @@ get_subscriptions()
 
 reject(subscription)
 
+disconnect()
+
 Listener API
 -----------------------------------
 
