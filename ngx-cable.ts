@@ -32,5 +32,11 @@ export class NgXCable {
                 _this.cable.subscriptions.remove(subscription);
             }
         );
-    }
+    };
+    public get_subscriptions = function() {
+        return this.cable.subscriptions.subscriptions;
+    };
+    public reject = function(subscription) {
+        this.cable.subscriptions.remove(subscription);
+    };
 };

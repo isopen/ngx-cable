@@ -79,6 +79,10 @@ perform(action, data)
 
 unsubscribe()
 
+get_subscriptions()
+
+reject(subscription)
+
 Listener API
 -----------------------------------
 
