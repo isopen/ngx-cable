@@ -26,6 +26,12 @@ export class NgXCable {
         this.subscription.perform(action, data);
     };
     public unsubscribe = function() {
-        this.cable.subscriptions.remove(this.subscription);
+        let _this = this;
+        console.log(this.cable.subscriptions.subscriptions);
+        this.cable.subscriptions.subscriptions.forEach(
+            function(subscription) {
+                _this.cable.subscriptions.remove(subscription);
+            }
+        );
     }
 };
