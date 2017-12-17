@@ -1,4 +1,5 @@
 ![alt text](https://img.shields.io/wercker/ci/wercker/docs.svg)
+![alt_text](https://img.shields.io/npm/v/npm.svg)
 
 Install
 -----------------------------------
