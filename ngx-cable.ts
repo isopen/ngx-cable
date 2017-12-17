@@ -27,7 +27,6 @@ export class NgXCable {
     };
     public unsubscribe = function() {
         let _this = this;
-        console.log(this.cable.subscriptions.subscriptions);
         this.cable.subscriptions.subscriptions.forEach(
             function(subscription) {
                 _this.cable.subscriptions.remove(subscription);
