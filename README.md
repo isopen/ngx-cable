@@ -75,6 +75,8 @@ create(params)
 
 send(data)
 
+perform(action, data)
+
 Listener API
 -----------------------------------
 
