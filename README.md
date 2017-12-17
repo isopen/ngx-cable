@@ -1,5 +1,5 @@
-<img src="https://img.shields.io/wercker/ci/wercker/docs.svg" data-canonical-src="https://www.npmjs.com/package/ngx-cable" style="max-width:100%;">
-<img src="https://img.shields.io/npm/v/npm.svg" data-canonical-src="https://www.npmjs.com/package/ngx-cable" style="max-width:100%;">
+![alt text](https://img.shields.io/wercker/ci/wercker/docs.svg)
+![alt_text](https://img.shields.io/npm/v/npm.svg)
 
 Install
 -----------------------------------
