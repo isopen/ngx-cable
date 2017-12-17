@@ -25,4 +25,7 @@ export class NgXCable {
     public perform = function(action, data) {
         this.subscription.perform(action, data);
     };
+    public unsubscribe = function() {
+        this.cable.subscriptions.remove(this.subscription);
+    }
 };

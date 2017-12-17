@@ -77,6 +77,8 @@ send(data)
 
 perform(action, data)
 
+unsubscribe()
+
 Listener API
 -----------------------------------
 
