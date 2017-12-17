@@ -47,7 +47,7 @@ Usage
             }
           );
           
-        this.ngcable.set_cable(
+        this.ngcable.setCable(
           http://example.com/chat
         );
         
