@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import * as ActionCable from 'actioncable';
 import { Broadcaster } from './broadcaster';
+import {Subscription} from 'rxjs/Subscription';
 
 @Injectable()
 export class NgXCable {
@@ -19,11 +20,27 @@ export class NgXCable {
             }
         });
     };
-    public send = function(data) {
-        this.cable.subscriptions.subscriptions[0].send(data);
+    public send = function(data, subscriptions: any = false) {
+        if(subscriptions == false) {
+            this.cable.subscriptions.subscriptions.send(data);
+        }else {
+            subscriptions.forEach(
+                function(subscription) {
+                    subscription.send(data);
+                }
+            );
+        }
     };
-    public perform = function(action, data) {
-        this.cable.subscriptions.subscriptions[0].perform(action, data);
+    public perform = function(action, data, subscriptions: any = false) {
+        if(subscriptions == false) {
+            this.cable.subscriptions.subscriptions[0].perform(action, data);
+        }else {
+            subscriptions.forEach(
+                function(subscription) {
+                    subscription.perform(action, data);
+                }
+            );
+        }
     };
     public unsubscribe = function() {
         let _this = this;
