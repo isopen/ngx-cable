@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import * as ActionCable from 'actioncable';
 import { Broadcaster } from './broadcaster';
-import {Subscription} from 'rxjs/Subscription';
 
 @Injectable()
 export class NgXCable {
