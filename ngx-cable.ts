@@ -21,7 +21,7 @@ export class NgXCable {
     };
     public send = function(data, subscriptions: any = false) {
         if(subscriptions == false) {
-            this.cable.subscriptions.subscriptions.send(data);
+            this.cable.subscriptions.subscriptions[0].send(data);
         }else {
             subscriptions.forEach(
                 function(subscription) {
