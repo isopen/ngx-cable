@@ -69,15 +69,15 @@ Usage
 Ngx-cable API
 -----------------------------------
 
-setCable(url)
+setCable(url) or alias connect(url)
 
-create(params)
+create(params) or alias subscribe(params)
 
-send(data)
+send(data) or send(data, subscriptions)
 
-perform(action, data)
+perform(action, data) or send(action, data, subscriptions)
 
-unsubscribe()
+unsubscribe() or unsubscribe(subscriptions)
 
 getSubscriptions()
 
