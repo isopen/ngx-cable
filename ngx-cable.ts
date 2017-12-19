@@ -28,24 +28,34 @@ export class NgXCable {
     public send = function(data, subscriptions: any = false) {
         if(subscriptions == false) {
             this.cable.subscriptions.subscriptions[0].send(data);
-        }else {
+        }else if(subscriptions instanceof Array) {
           subscriptions.forEach(
             function(subscription) {
-              subscription.send(data);
+              if(subscription instanceof ActionCable.Subscription) {
+                subscription.send(data);
+              }
             }
           );
+        }else {
+          return false;
         }
+        return true;
     };
     public perform = function(action, data, subscriptions: any = false) {
         if(subscriptions == false) {
             this.cable.subscriptions.subscriptions[0].perform(action, data);
-        }else {
+        }else if(subscriptions instanceof Array) {
             subscriptions.forEach(
               function(subscription) {
-                subscription.perform(action, data);
+                if(subscription instanceof ActionCable.Subscription) {
+                  subscription.perform(action, data);
+                }
               }
             );
+        }else {
+          return false;
         }
+        return true;
     };
     public unsubscribe = function(subscriptions: any = false) {
         let _this = this;
@@ -55,13 +65,18 @@ export class NgXCable {
               _this.cable.subscriptions.remove(subscription);
             }
           );
-        }else {
+        }else if(subscriptions instanceof Array) {
           subscriptions.forEach(
             function (subscription) {
-              _this.cable.subscriptions.remove(subscription);
+              if(subscription instanceof ActionCable.Subscription) {
+                _this.cable.subscriptions.remove(subscription);
+              }
             }
           );
+        }else {
+          return false;
         }
+        return true;
     };
     public getSubscriptions = function() {
         return this.cable.subscriptions.subscriptions;
