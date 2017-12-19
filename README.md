@@ -70,11 +70,13 @@ NgX-cable API
 -----------------------------------
 ###### setCable(url) or alias connect(url)
 <pre>
+Connect to channel<br>
 url - string
 </pre>
 
 ###### create(params) or alias subscribe(params)<br>
 <pre>
+Create a channel subscription<br>
 params = {
     channel: name_channel,
     room: name_room
@@ -85,12 +87,14 @@ name_room - string
 
 ###### send(data) or send(data, subscriptions)<br>
 <pre>
+Send message to subscribers<br>
 data - object<br>
 subscriptions - array
 </pre>
 
 ###### perform(action, data) or send(action, data, subscriptions)<br>
 <pre>
+Send message to subscribers<br>
 action - string<br>
 data - object<br>
 subscriptions - array consisting of ActionCable.Subscription
@@ -98,24 +102,32 @@ subscriptions - array consisting of ActionCable.Subscription
 
 ###### unsubscribe() or unsubscribe(subscriptions)<br>
 <pre>
+Unsubscribe from subscriptions<br>
 subscriptions - array consisting of ActionCable.Subscription
 </pre>
 
 ###### reject(subscription)<br>
 <pre>
+Unsubscribe from the subscription<br>
 subscription - ActionCable.Subscription
 </pre>
 
 ###### getSubscriptions()
+<pre>
+Get active Subscriptions
+</pre>
 
 ###### disconnect()
+<pre>
+Disconnect from channel
+</pre>
 
 Listener API
 -----------------------------------
 
-on(key)
+###### on(key)
 
-broadcast(key, data)
+###### broadcast(key, data)
 
 Read
 -----------------------------------
