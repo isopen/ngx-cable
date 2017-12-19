@@ -1,5 +1,4 @@
 ![build success](https://img.shields.io/teamcity/codebetter/bt428.svg)
-![npm 5.6](https://img.shields.io/npm/v/npm.svg)
 
 > Integrate ActionCable into your Angular application.
 
