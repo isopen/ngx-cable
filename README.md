@@ -70,18 +70,30 @@ Ngx-cable API
 -----------------------------------
 
 setCable(url) or alias connect(url)
+url - string
 
 create(params) or alias subscribe(params)
+params = {
+    channel: name_channel,
+    room: name_room
+};
 
-send(data) or send(data, subscriptions)
+send(data) or send(data, subscriptions)<br>
+data - object<br>
+subscriptions - array
 
-perform(action, data) or send(action, data, subscriptions)
+perform(action, data) or send(action, data, subscriptions)<br>
+action - string<br>
+data - object<br>
+subscriptions - array consisting of ActionCable.Subscription
 
-unsubscribe() or unsubscribe(subscriptions)
+unsubscribe() or unsubscribe(subscriptions)<br>
+subscriptions - array consisting of ActionCable.Subscription
 
 getSubscriptions()
 
-reject(subscription)
+reject(subscription)<br>
+subscription - ActionCable.Subscription
 
 disconnect()
 
