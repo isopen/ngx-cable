@@ -68,12 +68,12 @@ Usage
     
 Ngx-cable API
 -----------------------------------
-setCable(url) or alias connect(url)
+###### setCable(url) or alias connect(url)
 <pre>
 url - string
 </pre>
 
-create(params) or alias subscribe(params)<br>
+###### create(params) or alias subscribe(params)<br>
 <pre>
 params = {
     channel: name_channel,
@@ -81,32 +81,32 @@ params = {
 };
 </pre>
 
-send(data) or send(data, subscriptions)<br>
+###### send(data) or send(data, subscriptions)<br>
 <pre>
 data - object<br>
 subscriptions - array
 </pre>
 
-perform(action, data) or send(action, data, subscriptions)<br>
+###### perform(action, data) or send(action, data, subscriptions)<br>
 <pre>
 action - string<br>
 data - object<br>
 subscriptions - array consisting of ActionCable.Subscription
 </pre>
 
-unsubscribe() or unsubscribe(subscriptions)<br>
+###### unsubscribe() or unsubscribe(subscriptions)<br>
 <pre>
 subscriptions - array consisting of ActionCable.Subscription
 </pre>
 
-reject(subscription)<br>
+###### reject(subscription)<br>
 <pre>
 subscription - ActionCable.Subscription
 </pre>
 
-getSubscriptions()
+###### getSubscriptions()
 
-disconnect()
+###### disconnect()
 
 Listener API
 -----------------------------------
