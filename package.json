@@ -1,6 +1,6 @@
 {
   "name": "ngx-cable",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "ngx-cable",
   "main": "index.ts",
   "scripts": {
