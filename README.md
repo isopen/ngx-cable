@@ -66,7 +66,7 @@ Usage
     };
     </pre>
     
-Ngx-cable API
+NgX-cable API
 -----------------------------------
 ###### setCable(url) or alias connect(url)
 <pre>
@@ -78,7 +78,9 @@ url - string
 params = {
     channel: name_channel,
     room: name_room
-};
+};<br>
+name_channel - string<br>
+name_room - string
 </pre>
 
 ###### send(data) or send(data, subscriptions)<br>
