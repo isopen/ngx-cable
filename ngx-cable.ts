@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import * as ActionCable from 'actioncable';
 import { Broadcaster } from './broadcaster';
+import {isNullOrUndefined} from "util";
 
 @Injectable()
 export class NgXCable {
@@ -8,13 +9,13 @@ export class NgXCable {
         private broadcaster: Broadcaster
     ) {
     };
-    public setCable = function(url) {
+    public setCable = function(url: string) {
         this.cable = ActionCable.createConsumer(url);
     };
-    public connect = function(url) {
+    public connect = function(url: string) {
         this.setCable(url);
     }
-    public create = function(params) {
+    public create = function(params: {channel: string, room: string}) {
         let _this = this;
         return this.cable.subscriptions.create(params, {
             received: function (data: any) {
@@ -22,11 +23,11 @@ export class NgXCable {
             }
         });
     };
-    public subscribe = function(params) {
+    public subscribe = function(params: {channel: string, room: string}) {
         return this.create(params);
     };
-    public send = function(data, subscriptions: any = false) {
-        if(subscriptions == false) {
+    public send = function(data: any, subscriptions?: ActionCable.Subscription[]) {
+        if(isNullOrUndefined(subscriptions)) {
             this.cable.subscriptions.subscriptions[0].send(data);
         }else if(subscriptions instanceof Array) {
           subscriptions.forEach(
@@ -41,8 +42,8 @@ export class NgXCable {
         }
         return true;
     };
-    public perform = function(action, data, subscriptions: any = false) {
-        if(subscriptions == false) {
+    public perform = function(action: string, data: any, subscriptions?: ActionCable.Subscription[]) {
+        if(isNullOrUndefined(subscriptions)) {
             this.cable.subscriptions.subscriptions[0].perform(action, data);
         }else if(subscriptions instanceof Array) {
             subscriptions.forEach(
@@ -57,9 +58,9 @@ export class NgXCable {
         }
         return true;
     };
-    public unsubscribe = function(subscriptions: any = false) {
+    public unsubscribe = function(subscriptions?: ActionCable.Subscription[]) {
         let _this = this;
-        if(subscriptions == false) {
+        if(isNullOrUndefined(subscriptions)) {
           this.cable.subscriptions.subscriptions.forEach(
             function (subscription) {
               _this.cable.subscriptions.remove(subscription);
@@ -81,7 +82,7 @@ export class NgXCable {
     public getSubscriptions = function() {
         return this.cable.subscriptions.subscriptions;
     };
-    public reject = function(subscription) {
+    public reject = function(subscription: ActionCable.Subscription) {
         this.cable.subscriptions.remove(subscription);
     };
     public disconnect = function() {

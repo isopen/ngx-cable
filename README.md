@@ -12,48 +12,34 @@ https://goo.gl/sMmKpC
 
 NgX-cable API
 -----------------------------------
-#### setCable(url), connect(url)
+#### setCable(url: string), connect(url: string)
 <pre>
 Connect to channel<br>
-url - string
 </pre>
 
-#### create(params), subscribe(params)<br>
+#### create(params: {channel: string, room: string}), subscribe(params: {channel: string, room: string})<br>
 <pre>
 Create a channel subscription<br>
-params = {
-    channel: name_channel,
-    room: name_room
-};<br>
-name_channel - string<br>
-name_room - string
 </pre>
 
-#### send(data), send(data, subscriptions)<br>
+#### send(data: any, subscriptions?: ActionCable.Subscription[])<br>
 <pre>
 Send message to subscribers<br>
-data - object<br>
-subscriptions - array
 </pre>
 
-#### perform(action, data), perform(action, data, subscriptions)<br>
+#### perform(action: string, data: any, subscriptions?: ActionCable.Subscription[])<br>
 <pre>
 Send message to subscribers<br>
-action - string<br>
-data - object<br>
-subscriptions - array consisting of ActionCable.Subscription
 </pre>
 
-#### unsubscribe(), unsubscribe(subscriptions)<br>
+#### unsubscribe(subscriptions?: ActionCable.Subscription[])<br>
 <pre>
 Unsubscribe from subscriptions<br>
-subscriptions - array consisting of ActionCable.Subscription
 </pre>
 
-#### reject(subscription)<br>
+#### reject(subscription: ActionCable.Subscription)<br>
 <pre>
 Unsubscribe from the subscription<br>
-subscription - ActionCable.Subscription
 </pre>
 
 #### getSubscriptions()
