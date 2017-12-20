@@ -83,7 +83,12 @@ export class NgXCable {
         return this.cable.subscriptions.subscriptions;
     };
     public reject = function(subscription: ActionCable.Subscription) {
-        this.cable.subscriptions.remove(subscription);
+        if(subscription instanceof ActionCable.Subscription) {
+          this.cable.subscriptions.remove(subscription);
+        }else {
+          return false;
+        }
+        return true;
     };
     public disconnect = function() {
         this.cable.disconnect();
