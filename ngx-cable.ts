@@ -5,6 +5,7 @@ import {isNullOrUndefined} from "util";
 
 @Injectable()
 export class NgXCable {
+    // TODO:: checking the existence of a connection
     constructor(
         private broadcaster: Broadcaster
     ) {
