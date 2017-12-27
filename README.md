@@ -17,6 +17,11 @@ NgX-cable API
 Connect to channel<br>
 </pre>
 
+#### isOpen()
+<pre>
+Сhecking connection status
+</pre>
+
 #### create(params: {channel: string, room: string}), subscribe(params: {channel: string, room: string})<br>
 <pre>
 Create a channel subscription<br>
