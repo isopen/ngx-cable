@@ -1,11 +1,10 @@
 import { Injectable } from '@angular/core';
 import * as ActionCable from 'actioncable';
 import { Broadcaster } from './broadcaster';
-import {isNullOrUndefined} from "util";
+import { isNullOrUndefined, isUndefined } from "util";
 
 @Injectable()
 export class NgXCable {
-    // TODO:: checking the existence of a connection
     constructor(
         private broadcaster: Broadcaster
     ) {
@@ -15,6 +14,13 @@ export class NgXCable {
     };
     public connect = function(url: string) {
         this.setCable(url);
+    }
+    public isOpen = function() {
+        if(isUndefined(this.cable)) {
+            return false;
+        }else {
+            return true;
+        }
     }
     public create = function(params: {channel: string, room: string}) {
         let _this = this;
@@ -92,6 +98,10 @@ export class NgXCable {
         return true;
     };
     public disconnect = function() {
-        this.cable.disconnect();
+        if(this.isOpen()) {
+            this.cable.disconnect();
+        }else {
+            return false;
+        }
     };
 };
