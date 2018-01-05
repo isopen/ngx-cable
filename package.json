@@ -1,6 +1,6 @@
 {
   "name": "ngx-cable",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "ngx-cable",
   "main": "index.ts",
   "scripts": {
@@ -12,7 +12,6 @@
     "actioncable": "5.1.4"
   },
   "peerDependencies": {
-    "@angular/core": "^4.2.4",
     "rxjs": "^5.0.1"
   },
   "repository": {
