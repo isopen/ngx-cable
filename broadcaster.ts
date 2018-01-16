@@ -8,6 +8,9 @@ export class Broadcaster {
     private _eventBus: any;
     constructor(
     ) {
+        this.init();
+    };
+    private init() {
         this._eventBus = new Subject();
     };
     public broadcast(key, data) {
@@ -21,5 +24,8 @@ export class Broadcaster {
             .map(function (event) {
                 return event.data;
             });
+    };
+    public off() {
+        this.init();
     };
 };
