@@ -64,6 +64,8 @@ Listener API
 
 #### broadcast(key, data)
 
+#### off()
+
 Usage
 -----------------------------------
 
