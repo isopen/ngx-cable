@@ -28,4 +28,4 @@ export class Broadcaster {
     public off() {
         this.init();
     };
-};
+}
