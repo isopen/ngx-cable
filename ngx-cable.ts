@@ -30,7 +30,10 @@ export class NgXCable {
         return this.create(params);
     };
     public send = function(data: any, subscriptions?: ActionCable.Subscription[]) {
-        if(isNullOrUndefined(subscriptions)) {
+        if(!this.isOpen()) {
+            return false;
+        }
+        if(isNullOrUndefined(subscriptions) && this.isOpen()) {
             this.cable.subscriptions.subscriptions[0].send(data);
         }else if(subscriptions instanceof Array) {
           subscriptions.forEach(
@@ -46,6 +49,9 @@ export class NgXCable {
         return true;
     };
     public perform = function(action: string, data: any, subscriptions?: ActionCable.Subscription[]) {
+        if(!this.isOpen()) {
+            return false;
+        }
         if(isNullOrUndefined(subscriptions)) {
             this.cable.subscriptions.subscriptions[0].perform(action, data);
         }else if(subscriptions instanceof Array) {
