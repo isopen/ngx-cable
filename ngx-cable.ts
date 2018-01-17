@@ -14,14 +14,10 @@ export class NgXCable {
     };
     public connect = function(url: string) {
         this.setCable(url);
-    }
+    };
     public isOpen = function() {
-        if(isUndefined(this.cable)) {
-            return false;
-        }else {
-            return true;
-        }
-    }
+        return !isUndefined(this.cable);
+    };
     public create = function(params: {channel: string, room: string}) {
         let _this = this;
         return this.cable.subscriptions.create(params, {
@@ -104,4 +100,4 @@ export class NgXCable {
             return false;
         }
     };
-};
+}
