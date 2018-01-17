@@ -16,7 +16,7 @@ export class NgXCable {
         this.setCable(url);
     };
     public isOpen = function() {
-        return !isUndefined(this.cable) && this.cable.connection.disconnected;
+        return !isUndefined(this.cable) && !this.cable.connection.disconnected;
     };
     public create = function(params: {channel: string, room: string}) {
         let _this = this;
