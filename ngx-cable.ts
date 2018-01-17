@@ -33,7 +33,7 @@ export class NgXCable {
         if(!this.isOpen()) {
             return false;
         }
-        if(isNullOrUndefined(subscriptions) && this.isOpen()) {
+        if(isNullOrUndefined(subscriptions)) {
             this.cable.subscriptions.subscriptions[0].send(data);
         }else if(subscriptions instanceof Array) {
           subscriptions.forEach(
