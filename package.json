@@ -1,13 +1,13 @@
 {
   "name": "ngx-cable",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "ngx-cable",
   "main": "index.ts",
   "scripts": {
     "test": "test"
   },
   "author": "Maxim Tyulenev",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "actioncable": "5.1.4"
   },
