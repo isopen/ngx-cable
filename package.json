@@ -1,6 +1,6 @@
 {
   "name": "ngx-cable",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "ngx-cable",
   "main": "index.ts",
   "scripts": {
@@ -38,5 +38,6 @@
     "ionic3-cable",
     "Rails5",
     "Action Cable"
-  ]
+  ],
+  "homepage": "https://ngx-cable.herokuapp.com/"
 }
