@@ -95,6 +95,18 @@ export class NgXCable {
     public getSubscriptions = function() {
         return this.cable.subscriptions.subscriptions;
     };
+    public searchSubcriptions = function(id, field = 'room') {
+        let rsub = [];
+        this.getSubscriptions().forEach(
+            function(subscription) {
+                const msg = JSON.parse(subscription.identifier);
+                if(id === msg[field]) {
+                    rsub.push(subscription);
+                }
+            }
+        );
+        return rsub;
+    };
     public reject = function(subscription: ActionCable.Subscription) {
         if(subscription instanceof ActionCable.Subscription) {
           this.cable.subscriptions.remove(subscription);
