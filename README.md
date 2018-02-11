@@ -6,10 +6,11 @@ Install
 npm install actioncable --save<br>
 npm install ngx-cable --save
 
-Example
+Examples
 -----------------------------------
 <a href="https://goo.gl/sMmKpC">angular</a><br>
 <a href="https://github.com/isopen/examples-ngx-cable/blob/master/ionic/src/app/app.component.ts">ionic</a>
+<a href="https://github.com/isopen/soc/blob/master/frontend/src/app/page/page.service.ts">send message</a>
 
 NgX-cable API
 -----------------------------------
