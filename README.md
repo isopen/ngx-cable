@@ -8,7 +8,7 @@ npm install ngx-cable --save
 
 Example
 -----------------------------------
-https://goo.gl/sMmKpC
+https://goo.gl/sMmKpC<br>
 https://github.com/isopen/examples-ngx-cable
 
 NgX-cable API
