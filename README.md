@@ -13,7 +13,7 @@ Examples
 <a href="https://github.com/isopen/examples-ngx-cable/blob/master/ionic/src/app/app.component.ts">ionic</a><br>
 <a href="https://github.com/isopen/soc/blob/master/frontend/src/app/page/page.service.ts">send message</a>
 
-NgX-cable API
+API
 -----------------------------------
 #### setCable(url: string), connect(url: string)
 <pre>
