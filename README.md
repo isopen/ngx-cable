@@ -1,6 +1,6 @@
 > <h1>NgX-Cable</h1> <img src="https://camo.githubusercontent.com/10f9fa2b4f264bed89d63d9317fc52ca2918858c/68747470733a2f2f6465766469762e76697375616c73747564696f2e636f6d2f5f617069732f7075626c69632f6275696c642f646566696e6974696f6e732f30626462633539302d613036322d346333662d623066362d3933383366363738363565652f353236312f6261646765" />
 
-> Integrate ActionCable into your Angular application.
+> Integrate ActionCable into your application.
 
 Install
 -----------------------------------
