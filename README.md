@@ -17,7 +17,7 @@ Cable API
 -----------------------------------
 #### setCable(url: string), connect(url: string)
 <pre>
-Connect to channel<br>
+Connect to channel
 </pre>
 
 #### isOpen()
@@ -27,27 +27,27 @@ Connect to channel<br>
 
 #### create(params: {channel: string, room: string}), subscribe(params: {channel: string, room: string})<br>
 <pre>
-Create a channel subscription<br>
+Create a channel subscription
 </pre>
 
 #### send(data: any, subscriptions?: ActionCable.Subscription[])<br>
 <pre>
-Send message to subscribers<br>
+Send message to subscribers
 </pre>
 
 #### perform(action: string, data: any, subscriptions?: ActionCable.Subscription[])<br>
 <pre>
-Send message to subscribers<br>
+Send message to subscribers
 </pre>
 
 #### unsubscribe(subscriptions?: ActionCable.Subscription[])<br>
 <pre>
-Unsubscribe from subscriptions<br>
+Unsubscribe from subscriptions
 </pre>
 
 #### reject(subscription: ActionCable.Subscription)<br>
 <pre>
-Unsubscribe from the subscription<br>
+Unsubscribe from the subscription
 </pre>
 
 #### getSubscriptions()
