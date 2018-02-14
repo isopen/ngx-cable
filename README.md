@@ -9,9 +9,9 @@ npm install ngx-cable --save
 
 Examples
 -----------------------------------
-<a href="https://goo.gl/sMmKpC">angular</a><br>
-<a href="https://github.com/isopen/examples-ngx-cable/blob/master/ionic/src/app/app.component.ts">ionic</a><br>
-<a href="https://github.com/isopen/soc/blob/master/frontend/src/app/page/page.service.ts">send message</a>
+<a href="https://goo.gl/sMmKpC" target="_blank">angular</a><br>
+<a href="https://github.com/isopen/examples-ngx-cable/blob/master/ionic/src/app/app.component.ts" target="_blank">ionic</a><br>
+<a href="https://github.com/isopen/soc/blob/master/frontend/src/app/page/page.service.ts" target="_blank">send message</a>
 
 Cable API
 -----------------------------------
