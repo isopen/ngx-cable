@@ -55,6 +55,11 @@ Unsubscribe from the subscription<br>
 Get active Subscriptions
 </pre>
 
+#### searchSubcriptions(id: int, room: string)
+<pre>
+Search for a subscription
+</pre>
+
 #### disconnect()
 <pre>
 Disconnect from channel
