@@ -1,4 +1,4 @@
-> <h1>NgX-Cable</h1> <img src="https://camo.githubusercontent.com/0bebc321c096dfcea0b428a557a9ac1303bd4691/68747470733a2f2f7472617669732d63692e6f72672f4d6963726f736f66742f7673636f64652e7376673f6272616e63683d6d6173746572" />
+> <h1>NgX-Cable</h1>
 
 > Integrate ActionCable into your application.
 
