@@ -1,5 +1,5 @@
 > <h1>NgX-Cable</h1>
-
+> <img src="https://travis-ci.org/travis-ci/travis-web.svg?branch=master" /><br>
 > Integrate ActionCable into your application.
 
 Install
