@@ -1,2 +1,4 @@
 /node_modules
 /.idea
+/out_dir/ngxcable.js
+package-lock.json
