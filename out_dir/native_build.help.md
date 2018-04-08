@@ -1,5 +1,5 @@
 #### requires
-npm install webpack-cli webpack<br>
+npm install -g webpack-cli webpack<br>
 npm install ts-loader<br>
 npm install rxjs<br>
 npm install angular<br>

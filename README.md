@@ -7,6 +7,10 @@ Install
 npm install actioncable --save<br>
 npm install ngx-cable --save
 
+Native build
+-----------------------------------
+<a href="https://github.com/isopen/ngx-cable/blob/master/out_dir/native_build.help.md">build instruction</a>
+
 Examples
 -----------------------------------
 <a href="https://goo.gl/sMmKpC" target="_blank">angular</a><br>
