@@ -55,6 +55,11 @@ Unsubscribe from the subscription
 Get active Subscriptions
 </pre>
 
+#### getCountSubscriptions()
+<pre>
+Get count Subscriptions
+</pre>
+
 #### searchSubcriptions(id: int, room: string)
 <pre>
 Search for a subscription
@@ -101,29 +106,29 @@ Usage
         private ngcable: NgXCable,
         private broadcaster: Broadcaster
       ) {
-                  
+
         this.broadcaster.on('ChatChannel')
           .subscribe(
             response => {
               console.log(response);
             }
           );
-          
+
         this.ngcable.setCable(
           http://example.com/chat
         );
-        
+
         const params = {
           channel: 'ChatChannel',
           room: 'test'
         };
-          
+
         this.ngcable.create(params);
-        
+
         params['channel'] = 'ChatChannel';
         params['room'] = 'test1';
         this.ngcable.create(params);
-        
+
       }
     };
     </pre>
