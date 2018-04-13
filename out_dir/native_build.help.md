@@ -2,7 +2,7 @@
 <pre>
 <code>
 npm install -g webpack-cli webpack<br>
-npm install ts-loader rxjs angular util @angular/core uglifyjs-webpack-plugin typescript webpack
+npm install ts-loader rxjs angular util @angular/core uglifyjs-webpack-plugin typescript webpack actioncable
 </code>
 </pre>
 #### requires a peer
