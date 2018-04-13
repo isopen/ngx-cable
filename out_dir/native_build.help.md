@@ -2,7 +2,7 @@
 <pre>
 <code>
 npm install -g webpack-cli webpack<br>
-npm install ts-loader rxjs angular util @angular/core uglifyjs-webpack-plugin
+npm install ts-loader rxjs angular util @angular/core uglifyjs-webpack-plugin typescript webpack
 </code>
 </pre>
 #### requires a peer
