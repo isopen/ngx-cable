@@ -1,7 +1,19 @@
 #### requires
+<pre>
+<code>
 npm install -g webpack-cli webpack<br>
-npm install ts-loader rxjs angular util @angular/core uglifyjs-webpack-plugin<br>
+npm install ts-loader rxjs angular util @angular/core uglifyjs-webpack-plugin
+</code>
+</pre>
 #### requires a peer
+<pre>
+<code>
 npm install zone.js@^0.8.4
+</code>
+</pre>
 #### assembly command
+<pre>
+<code>
 webpack
+</code>
+</pre>
