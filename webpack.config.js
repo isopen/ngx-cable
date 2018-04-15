@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const path = require('path');
 
@@ -46,7 +47,11 @@ module.exports = {
             drop_console: true
           }
         }
-      })
+      }),
+      new webpack.ContextReplacementPlugin(
+        /\@angular(\\|\/)core(\\|\/)esm5/,
+        path.join(__dirname, './')
+      )
     ]
   },
   output: {
