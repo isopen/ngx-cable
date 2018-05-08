@@ -56,6 +56,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'out_dir'),
-    filename: 'ngxcable.min.js'
+    filename: 'ngxcable.min.js',
+    library: 'ngxcable'
   }
 };
