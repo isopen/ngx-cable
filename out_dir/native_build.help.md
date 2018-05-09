@@ -20,6 +20,6 @@ webpack
 #### pay attention to this
 <pre>
 <code>
-https://nodesecurity.io/advisories/612
+<a href=https://nodesecurity.io/advisories/612>npm audit</a>
 </code>
 </pre>
