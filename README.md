@@ -2,9 +2,16 @@
 > <img src="https://travis-ci.org/travis-ci/travis-web.svg?branch=master" /><br>
 > Integrate ActionCable into your application.
 
+Features
+-----------------------------------
+- <b>Multi-frameworks:</b> You can use <code>NgX-Cable</code> in modern frameworks.
+- <b>Cross-platform:</b> <code>NgX-Cable</code> can be used on any platform that supports javascript.
+- <b>Open source:</b> You can read the code in the project repository and edit it for your tasks.
+- <b>Easy to use:</b> You just need to install one npm package <code>npm install ngx-cable --save</code>
+- <b>Good support:</b> You can write a report at any time convenient for you.
+
 Install
 -----------------------------------
-npm install actioncable --save<br>
 npm install ngx-cable --save
 
 Native build
