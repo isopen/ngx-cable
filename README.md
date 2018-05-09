@@ -10,7 +10,7 @@ Features
 - <b>Cross-platform:</b> <code>NgX-Cable</code> can be used on any platform that supports javascript.
 - <b>Good support:</b> You can write a report at any time convenient for you.
 - <b>Open source and secure:</b> You can read the code in the project repository and edit it for your tasks.
-- <b>Freedom:</b> You can find the features on your own and expand opportunities as necessary.
+- <b>Freedom:</b> You can find the functions yourself in <code>NgX-Cable</code> and expand the capabilities as needed.
 
 Examples
 -----------------------------------
