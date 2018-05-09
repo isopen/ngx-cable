@@ -16,9 +16,9 @@ export class NgXCable {
     this.setCable(url);
   };
   public isOpen = function() {
-    if(!isUndefined(this.cable)) {
+    if (!isUndefined(this.cable)) {
       return !this.cable.connection.disconnected;
-    }else {
+    } else {
       return false;
     }
   };
@@ -34,60 +34,60 @@ export class NgXCable {
     return this.create(params);
   };
   public send = function(data: any, subscriptions?: ActionCable.Subscription[]) {
-    if(!this.isOpen()) {
+    if (!this.isOpen()) {
       return false;
     }
-    if(isNullOrUndefined(subscriptions)) {
+    if (isNullOrUndefined(subscriptions)) {
       this.cable.subscriptions.subscriptions[0].send(data);
-    }else if(subscriptions instanceof Array) {
+    } else if (subscriptions instanceof Array) {
       subscriptions.forEach(
         function(subscription) {
-          if(subscription instanceof ActionCable.Subscription) {
+          if (subscription instanceof ActionCable.Subscription) {
             subscription.send(data);
           }
         }
       );
-    }else {
+    } else {
       return false;
     }
     return true;
   };
   public perform = function(action: string, data: any, subscriptions?: ActionCable.Subscription[]) {
-    if(!this.isOpen()) {
+    if (!this.isOpen()) {
       return false;
     }
-    if(isNullOrUndefined(subscriptions)) {
+    if (isNullOrUndefined(subscriptions)) {
       this.cable.subscriptions.subscriptions[0].perform(action, data);
-    }else if(subscriptions instanceof Array) {
+    } else if (subscriptions instanceof Array) {
       subscriptions.forEach(
         function(subscription) {
-          if(subscription instanceof ActionCable.Subscription) {
+          if (subscription instanceof ActionCable.Subscription) {
             subscription.perform(action, data);
           }
         }
       );
-    }else {
+    } else {
       return false;
     }
     return true;
   };
   public unsubscribe = function(subscriptions?: ActionCable.Subscription[]) {
     let _this = this;
-    if(isNullOrUndefined(subscriptions)) {
+    if (isNullOrUndefined(subscriptions)) {
       this.cable.subscriptions.subscriptions.forEach(
         function (subscription) {
           _this.cable.subscriptions.remove(subscription);
         }
       );
-    }else if(subscriptions instanceof Array) {
+    } else if (subscriptions instanceof Array) {
       subscriptions.forEach(
         function (subscription) {
-          if(subscription instanceof ActionCable.Subscription) {
+          if (subscription instanceof ActionCable.Subscription) {
             _this.cable.subscriptions.remove(subscription);
           }
         }
       );
-    }else {
+    } else {
       return false;
     }
     return true;
@@ -103,7 +103,7 @@ export class NgXCable {
     this.getSubscriptions().forEach(
       function(subscription) {
         const msg = JSON.parse(subscription.identifier);
-        if(id === msg[field]) {
+        if (id === msg[field]) {
           rsub.push(subscription);
         }
       }
@@ -111,17 +111,17 @@ export class NgXCable {
     return rsub;
   };
   public reject = function(subscription: ActionCable.Subscription) {
-    if(subscription instanceof ActionCable.Subscription) {
+    if (subscription instanceof ActionCable.Subscription) {
       this.cable.subscriptions.remove(subscription);
-    }else {
+    } else {
       return false;
     }
     return true;
   };
   public disconnect = function() {
-    if(this.isOpen()) {
+    if (this.isOpen()) {
       this.cable.disconnect();
-    }else {
+    } else {
       return false;
     }
   };
