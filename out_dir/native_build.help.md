@@ -1,7 +1,7 @@
 #### requires
 <pre>
 <code>
-git clone https://github.com/isopen/ngx-cable.git
+git clone <a href="https://github.com/isopen/ngx-cable">https://github.com/isopen/ngx-cable.git</a>
 cd ngx-cable
 npm install -g webpack-cli webpack<br>
 npm install ts-loader rxjs angular util @angular/core uglifyjs-webpack-plugin typescript webpack actioncable
