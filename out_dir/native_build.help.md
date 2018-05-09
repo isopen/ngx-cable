@@ -3,8 +3,8 @@
 <code>
 git clone <a href="https://github.com/isopen/ngx-cable">https://github.com/isopen/ngx-cable.git</a>
 cd ngx-cable
-npm install -g webpack-cli webpack<br>
-npm install ts-loader rxjs angular util @angular/core uglifyjs-webpack-plugin typescript webpack actioncable
+npm i -g webpack-cli webpack<br>
+npm i ts-loader rxjs angular util @angular/core uglifyjs-webpack-plugin typescript webpack actioncable
 </code>
 </pre>
 #### requires a peer
@@ -23,5 +23,6 @@ webpack
 <pre>
 <code>
 <a href=https://nodesecurity.io/advisories/612>npm audit</a>
+Probably you will need to fix your <code>package-lock.json</code> and <code>npm i deep-extend</code>
 </code>
 </pre>
