@@ -17,3 +17,9 @@ npm install zone.js@^0.8.4
 webpack
 </code>
 </pre>
+#### pay attention to this
+<pre>
+<code>
+https://nodesecurity.io/advisories/612
+</code>
+</pre>
