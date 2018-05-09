@@ -11,6 +11,12 @@ Features
 - <b>Good support:</b> You can write a report at any time convenient for you (in any language).
 - <b>Open source and secure:</b> You can read the code in the project repository and edit it for your tasks.
 
+Examples
+-----------------------------------
+<a href="https://goo.gl/sMmKpC" target="_blank">angular</a><br>
+<a href="https://github.com/isopen/examples-ngx-cable/blob/master/ionic/src/app/app.component.ts" target="_blank">ionic</a><br>
+<a href="https://github.com/isopen/soc/blob/master/frontend/src/app/page/page.service.ts" target="_blank">send message</a>
+
 Install
 -----------------------------------
 npm install ngx-cable --save
@@ -18,12 +24,6 @@ npm install ngx-cable --save
 Native build
 -----------------------------------
 <a href="https://github.com/isopen/ngx-cable/blob/master/out_dir/native_build.help.md">build instruction</a>
-
-Examples
------------------------------------
-<a href="https://goo.gl/sMmKpC" target="_blank">angular</a><br>
-<a href="https://github.com/isopen/examples-ngx-cable/blob/master/ionic/src/app/app.component.ts" target="_blank">ionic</a><br>
-<a href="https://github.com/isopen/soc/blob/master/frontend/src/app/page/page.service.ts" target="_blank">send message</a>
 
 Cable API
 -----------------------------------
