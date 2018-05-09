@@ -27,3 +27,4 @@ Probably you will need to fix your package-lock.json
 (find package deep-extend and replace the version with 0.5.1) and run npm i deep-extend@0.5.1
 </code>
 </pre>
+issues: <a href="https://github.com/webpack/webpack/issues/7255">https://github.com/webpack/webpack/issues/7255</a>
