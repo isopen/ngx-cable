@@ -23,6 +23,6 @@ webpack
 <pre>
 <code>
 <a href=https://nodesecurity.io/advisories/612>npm audit</a>
-Probably you will need to fix your <code>package-lock.json</code> and <code>npm i deep-extend</code>
+Probably you will need to fix your package-lock.json and run npm i deep-extend^0.5.1
 </code>
 </pre>
