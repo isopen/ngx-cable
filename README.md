@@ -4,7 +4,7 @@
 
 Features
 -----------------------------------
-- <b>Easy to use:</b> You just need to install one npm package <code>npm install ngx-cable --save</code>
+- <b>Easy to use:</b> You just need to install npm package <code>npm install ngx-cable --save</code>
 - <b>Multi-frameworks:</b> You can use <code>NgX-Cable</code> in modern frameworks.
 - <b>Multi-cable:</b> <code>NgX-Cable</code> allows to create multiple connections. In one connection can create multiple subscriptions. Allows you to send messages to multiple channels.
 - <b>Cross-platform:</b> <code>NgX-Cable</code> can be used on any platform that supports javascript.
