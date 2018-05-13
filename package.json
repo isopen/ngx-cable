@@ -9,10 +9,10 @@
   "author": "Maxim Tyulenev",
   "license": "MIT",
   "dependencies": {
-    "actioncable": "5.1.4"
+    "actioncable": "5.2.0"
   },
   "peerDependencies": {
-    "rxjs": "^5.0.1"
+    "rxjs": "^6.1.0"
   },
   "repository": {
     "type": "git",
