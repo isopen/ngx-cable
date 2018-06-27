@@ -19,13 +19,3 @@ npm install zone.js@^0.8.4
 webpack
 </code>
 </pre>
-#### pay attention to this
-<pre>
-<code>
-<a href=https://nodesecurity.io/advisories/612>npm audit</a>
-Temporary solution (you do not need to do it):
-Probably you will need to fix your package-lock.json
-(find package deep-extend and replace the version with 0.5.1) 
-and run npm i deep-extend@0.5.1
-</code>
-</pre>

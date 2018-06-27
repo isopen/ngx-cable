@@ -1,6 +1,6 @@
 {
   "name": "ngx-cable",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "ngx-cable",
   "main": "index.ts",
   "scripts": {
@@ -19,25 +19,15 @@
     "url": "https://github.com/isopen/ngx-cable.git"
   },
   "keywords": [
-    "cable",
-    "ActionCable",
-    "Angular2-cable",
-    "Angular4-cable",
-    "Angular5-cable",
-    "ngx-cable",
-    "ngXCable",
-    "Rails",
-    "rails",
-    "Cable",
-    "Angular2",
-    "Angular4",
-    "Angular5",
-    "ionic2",
-    "ionic3",
-    "ionic2-cable",
-    "ionic3-cable",
-    "Rails5",
-    "Action Cable"
+    "cable", "Cable",
+    "ActionCable", "Action Cable", "actioncable",
+    "Angular2-cable", "Angular4-cable", "Angular5-cable", "Angular6-cable",
+    "ngx-cable", "ngXCable", "NgX-Cable",
+    "Rails", "rails", "Rails5",
+    "Angular", "Angular2", "Angular4", "Angular5", "Angular6",
+    "ionic2", "ionic3",
+    "ionic2-cable", "ionic3-cable",
+    "webpack", "rxjs"
   ],
   "homepage": "https://ngx-cable.herokuapp.com/"
 }
