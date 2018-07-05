@@ -2,16 +2,6 @@
 > <img src="https://travis-ci.org/travis-ci/travis-web.svg?branch=master" /><br>
 > Integrate ActionCable into your application.
 
-Features
------------------------------------
-- <b>Easy to use:</b> You just need to install npm package <code>npm install ngx-cable --save</code>
-- <b>Multi-frameworks:</b> You can use <code>NgX-Cable</code> in modern frameworks.
-- <b>Multi-cable:</b> <code>NgX-Cable</code> allows to create multiple connections. In one connection can create multiple subscriptions. Allows you to send messages to multiple channels and to several subscriptions on channel.
-- <b>Cross-platform:</b> <code>NgX-Cable</code> can be used on any platform that supports javascript.
-- <b>Good support:</b> You can write a report at any time convenient for you.
-- <b>Open source and secure:</b> You can read the code in the project repository and edit it for your tasks.
-- <b>Freedom:</b> You can find the functions yourself in <code>NgX-Cable</code> and expand the capabilities as needed.
-
 Examples
 -----------------------------------
 <a href="https://goo.gl/sMmKpC" target="_blank">angular</a><br>
