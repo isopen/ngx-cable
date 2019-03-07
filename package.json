@@ -1,6 +1,6 @@
 {
   "name": "ngx-cable",
-  "version": "1.2.7",
+  "version": "1.2.8",
   "description": "ngx-cable",
   "main": "index.ts",
   "scripts": {
@@ -8,27 +8,49 @@
   },
   "author": "Maxim Tyulenev",
   "license": "MIT",
-  "dependencies": {
-    "actioncable": "5.2.0"
-  },
   "peerDependencies": {
-    "rxjs": ">=5.0.1"
+    "actioncable": ">=5.2.4-3",
+    "rxjs": ">=5.0.1",
+    "rxjs-compat": ">=6.0.0",
+    "util": ">=0.12.3",
+    "@angular/core": ">=2.4.10",
+    "zone.js": ">=0.7.2"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/isopen/ngx-cable.git"
   },
   "keywords": [
-    "cable", "Cable",
-    "ActionCable", "Action Cable", "actioncable",
-    "Angular2-cable", "Angular4-cable", "Angular5-cable", "Angular6-cable",
-    "ngx-cable", "ngXCable", "NgX-Cable",
-    "Rails", "rails", "Rails5",
-    "Ruby on Rails", "ruby on rails", "ror", "ROR",
-    "Angular", "Angular2", "Angular4", "Angular5", "Angular6",
-    "ionic2", "ionic3",
-    "ionic2-cable", "ionic3-cable",
-    "webpack", "rxjs"
+    "cable",
+    "Cable",
+    "ActionCable",
+    "Action Cable",
+    "actioncable",
+    "Angular2-cable",
+    "Angular4-cable",
+    "Angular5-cable",
+    "Angular6-cable",
+    "ngx-cable",
+    "ngXCable",
+    "NgX-Cable",
+    "Rails",
+    "rails",
+    "Rails5",
+    "Ruby on Rails",
+    "ruby on rails",
+    "ror",
+    "ROR",
+    "Angular",
+    "Angular2",
+    "Angular4",
+    "Angular5",
+    "Angular6",
+    "ionic2",
+    "ionic3",
+    "ionic2-cable",
+    "ionic3-cable",
+    "webpack",
+    "rxjs"
   ],
   "homepage": "https://ngx-cable.herokuapp.com/"
 }

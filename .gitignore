@@ -1,4 +1,5 @@
 /node_modules
 /.idea
 /out_dir/ngxcable.min.js
+/out_dir/ngxcable.min.js.LICENSE.txt
 package-lock.json

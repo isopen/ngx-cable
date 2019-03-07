@@ -4,13 +4,8 @@
 git clone <a href="https://github.com/isopen/ngx-cable">https://github.com/isopen/ngx-cable.git</a>
 cd ngx-cable
 npm i -g webpack-cli webpack<br>
-npm i ts-loader rxjs angular util @angular/core uglifyjs-webpack-plugin typescript webpack actioncable
-</code>
-</pre>
-#### requires a peer
-<pre>
-<code>
-npm install zone.js@^0.8.4
+npm i --save rxjs rxjs-compat util @angular/core actioncable zone.js
+npm i --save-dev typescript ts-loader terser-webpack-plugin webpack
 </code>
 </pre>
 #### assembly command

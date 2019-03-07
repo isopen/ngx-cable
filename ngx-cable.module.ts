@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core';
-import { NgXCable } from "./ngx-cable";
-import { Broadcaster } from "./broadcaster";
+import {NgModule} from '@angular/core';
+import {NgXCable} from './ngx-cable';
+import {Broadcaster} from './broadcaster';
 
 @NgModule({
   providers: [
@@ -8,4 +8,5 @@ import { Broadcaster } from "./broadcaster";
     Broadcaster
   ]
 })
-export class NgXCableModule { }
+export class NgXCableModule {
+}
