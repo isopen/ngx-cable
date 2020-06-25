@@ -1,6 +1,6 @@
 {
   "name": "ngx-cable",
-  "version": "1.2.8",
+  "version": "1.2.9",
   "description": "ngx-cable",
   "main": "index.ts",
   "scripts": {
@@ -12,7 +12,6 @@
     "actioncable": ">=5.2.4-3",
     "rxjs": ">=5.0.1",
     "rxjs-compat": ">=6.0.0",
-    "util": ">=0.12.3",
     "@angular/core": ">=2.4.10",
     "zone.js": ">=0.7.2"
   },
